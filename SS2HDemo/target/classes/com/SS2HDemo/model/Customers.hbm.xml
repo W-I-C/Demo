@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-19 21:41:01 by Hibernate Tools 5.2.5.Final -->
+<hibernate-mapping>
+ <class catalog="mydb" name="com.SS2HDemo.model.Customers" table="customers">
+  <id name="customerId" type="java.lang.Integer">
+   <column name="customerID"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column length="40" name="name"/>
+  </property>
+  <property generated="never" lazy="false" name="phone" type="string">
+   <column length="16" name="phone"/>
+  </property>
+ </class>
+</hibernate-mapping>
